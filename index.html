@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuranApp - Disponible sur toutes les TV Samsung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .gradient-border {
+            border-left: 4px solid #3b82f6;
+        }
+        .compatibility-badge {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            border: 1px solid #3b82f6;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start p-4 md:p-10 overflow-x-hidden">
+
+    <!-- Décoration de fond interactive -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
+        <div class="absolute top-[-5%] left-[-5%] w-[50%] h-[50%] bg-blue-900/10 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-[-5%] right-[-5%] w-[50%] h-[50%] bg-indigo-900/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <main class="max-w-4xl w-full text-center space-y-8">
+        <!-- Logo et Titre Principal -->
+        <header class="pt-8 md:pt-16">
+            <div class="mb-6 inline-block p-5 rounded-[2rem] bg-gradient-to-br from-blue-600 to-indigo-700 shadow-2xl transform transition hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">QuranApp</h1>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+                <span class="compatibility-badge px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-blue-200">Compatible 100% Samsung TV</span>
+                <span class="compatibility-badge px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-blue-200">Tous Navigateurs</span>
+            </div>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Une expérience spirituelle universelle, conçue pour s'adapter parfaitement à chaque écran de la gamme Samsung.
+            </p>
+        </header>
+
+        <!-- Section État de Publication -->
+        <div class="glass-card rounded-[2.5rem] p-8 md:p-12 text-left relative overflow-hidden transition-all hover:bg-white/[0.07]">
+            <div class="absolute top-6 right-6">
+                <span class="flex h-4 w-4">
+                    <span class="status-pulse absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-4 w-4 bg-yellow-500"></span>
+                </span>
+            </div>
+            
+            <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 text-blue-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Publication en cours
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Le développement de <strong>QuranApp</strong> pour l'écosystème Samsung est finalisé. Notre code est optimisé pour fonctionner sur <strong>absolument tous les modèles</strong>, des écrans UHD classiques aux modèles QLED et Neo QLED.
+                    </p>
+                    <p class="text-gray-400">
+                        Nous avons soumis l'application pour une distribution mondiale. Chaque ligne de code a été testée pour répondre aux exigences les plus strictes.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div class="bg-blue-600/10 border border-blue-500/30 p-6 rounded-2xl">
+                        <p class="text-sm font-semibold text-blue-400 uppercase mb-2">Statut de la revue technique :</p>
+                        <p class="text-2xl font-bold text-white mb-2">En attente de réponse</p>
+                        <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-3/4 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Engagement Technique -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="glass-card rounded-[2rem] p-8 text-left border-l-4 border-emerald-500 bg-emerald-500/5">
+                <h3 class="text-xl font-bold mb-4 text-emerald-400 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Conformité Totale
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Nous nous engageons à respecter et à autoriser chaque demande technique ou mise à jour requise par Samsung. Notre infrastructure est flexible pour garantir une intégration sans faille.
+                </p>
+            </div>
+            
+            <div class="glass-card rounded-[2rem] p-8 text-left border-l-4 border-blue-500 bg-blue-500/5">
+                <h3 class="text-xl font-bold mb-4 text-blue-400 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                    Remerciements
+                </h3>
+                <p class="text-gray-300 text-sm leading-relaxed">
+                    Merci à Samsung pour leur plateforme exceptionnelle. Nous sommes honorés de proposer notre contenu sur leurs appareils et remercions leurs équipes pour l'examen minutieux de notre projet.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Support Technique / Navigateur -->
+        <div class="py-12 border-t border-white/10">
+            <h4 class="text-gray-500 text-sm font-semibold uppercase tracking-[0.3em] mb-6">Optimisé pour tous les environnements</h4>
+            <div class="flex justify-center items-center gap-8 grayscale opacity-50">
+                <span class="font-bold text-lg">Tizen OS</span>
+                <span class="font-bold text-lg">Chrome</span>
+                <span class="font-bold text-lg">Safari</span>
+                <span class="font-bold text-lg">Firefox</span>
+                <span class="font-bold text-lg">Samsung Internet</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="pb-12 text-gray-600 text-xs space-y-2">
+            <p>&copy; 2024 QuranApp Project. Développement spécialisé pour Smart TV.</p>
+            <p>Samsung et le logo Samsung sont des marques de Samsung Electronics Co., Ltd.</p>
+        </footer>
+    </main>
+
+</body>
+</html>
+
